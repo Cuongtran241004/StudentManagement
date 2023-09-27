@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center text-info mb-3 mt-3">Quản lý sinh viên</h1>
+
+        <form action="" class="mb-3">
+            <div class="mb-3">
+                <label for="name" class="form-label">Tên</label>
+                <input id="name" type="text" class="form-control">
+            </div>
+
+            <!--Birthday-->
+            <div class="mb-3">
+                <label for="birthday" class="form-label">Ngày sinh</label>
+                <input id="birthday" type="date" class="form-control">
+            </div>
+
+            <!-- btn-thêm -->
+            <button class="btn btn-primary">Thêm</button>
+        </form>
+
+        <!--div thông báo-->
+        <div id="notification">
+            <!-- <div class="alert alert-success">
+                Đã thêm thành công!
+            </div> -->
+        </div>
+
+        <!--Table hiển thị danh sách sinh viên-->
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Ngày sinh</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- <tr>
+                    <td>1</td>
+                    <td>Cường</td>
+                    <td>24-10-2004</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm btn-remove">Xóa</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Tiến</td>
+                    <td>15-08-2004</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm btn-remove">Xóa</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Quân</td>
+                    <td>14-06-2004</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm btn-remove">Xóa</button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <!--Script-->
+    <!-- <script src="./index.js"></script> -->
+    <script src="./indexClass.js"></script>
+</body>
+
+</html>
